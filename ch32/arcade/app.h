@@ -1,0 +1,57 @@
+#pragma once
+#include <stdint.h>
+#include <stddef.h>
+typedef enum { BTN_ACTION, BTN_UP, BTN_DOWN, BTN_RIGHT, BTN_LEFT, BTN_BACK, BTN_COUNT } buttons_names_t;
+/* Shared transient memory; only one application is active. */
+typedef union { uintptr_t align; uint8_t raw[2048]; uint32_t life[2][64][4]; } AppMemory;
+extern AppMemory app_memory;
+extern void (*app_callback)(void);
+extern uint8_t app_current;
+extern uint16_t app_frame_ms;
+extern uint32_t display_bytes;
+uint32_t TICK_Get(void);
+void board_init(void);
+void te_init(void);
+void te_edge(void);
+unsigned te_status(void);
+extern uint8_t te_enabled;
+int display_sync(void);
+void input_poll(void);
+uint8_t BTN_IsPressed(buttons_names_t b);
+uint8_t BTN_IsPressedRAW(buttons_names_t b);
+uint8_t input_take(buttons_names_t b);
+void input_clear(void);
+void uart_puts(const char *s);
+void uart_number(uint32_t n);
+void app_select(unsigned id);
+void app_menu(void);
+void app_service(void);
+int app_cancelled(void);
+void app_delay(uint32_t ms);
+void display_layout(uint8_t scale, uint8_t fmt);
+void display_window(unsigned x,unsigned y,unsigned w,unsigned h);
+void display_byte(uint8_t b);
+void display_end(void);
+void display_clear(unsigned w,unsigned h,uint8_t fmt);
+void LCD_SetWindow(uint16_t x,uint16_t y,uint16_t w,uint16_t h);
+void LCD_WriteRawData(uint16_t *data,uint16_t pixels);
+void LCD_WriteRawDataDMA(uint16_t *data,uint16_t pixels);
+void LCD_DMA_Wait(void);
+void LCD_OptimizedFill(uint16_t x,uint16_t y,uint16_t w,uint16_t h,uint16_t color);
+void ENG_SetInFrameCallback(void (*fn)(void));
+void ENG_UpdateInFrameCallback(void (*fn)(void));
+void ENG_SetOutFrameCallback(void (*fn)(void));
+void ENG_SetFPS(uint8_t fps);
+void ENG_ClearCommonBuf(void);
+void *ENG_CommonBufAlloc(uint16_t n);
+uint16_t ENG_CommonBufGetFreeBytes(void);
+void MENU_MainMenuProcess(void);
+void MENU_ForceBTNNotReleased(void);
+void tGFX_Reset(void);
+void fractal_enter(void);
+void life_enter(void);
+void invaders_run(void);
+void video_enter(void);
+void tiny_flush(void);
+void tiny_page(unsigned y);
+void tiny_byte(uint8_t b);

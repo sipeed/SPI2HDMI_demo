@@ -1,0 +1,18 @@
+# build outputs
+**/build/
+*.bin
+*.elf
+*.hex
+*.map
+*.lst
+*.o
+sdkconfig
+sdkconfig.old
+dependencies.lock
+managed_components/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.DS_Store
+.pio/

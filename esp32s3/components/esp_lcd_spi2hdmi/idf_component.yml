@@ -1,0 +1,5 @@
+version: "0.1.0"
+description: "SPI/QSPI esp_lcd driver for the SPI2HDMI FPGA bridge"
+license: "MIT"
+dependencies:
+  idf: ">=5.4,<6.0"
