@@ -1,0 +1,14 @@
+# file | menu name | instructions per frame | quirks (from the archive's programs.json)
+br8kout.ch8|BR8KOUT|7|
+snek.ch8|SNEK|1000|
+mato8.ch8|MATO8|20|
+flightrunner.ch8|FLIGHT|15|
+superpong.ch8|PONG|30|
+outlaw.ch8|OUTLAW|15|
+dinorun.ch8|C8 DINO|15|clipQuirks,vBlankQuirks,logicQuirks
+fuse.ch8|FUSE|15|
+mini-lights-out.ch8|LIGHTS|7|
+1dcell.ch8|1D CELL|1000|
+octojam1title.ch8|JAM 1|7|
+danm8ku.ch8|DANM8KU|1000|
+spacejam.ch8|SPACEJAM|100|

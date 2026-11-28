@@ -18,6 +18,7 @@
 | [`ch32/arcade`](ch32/arcade) | CH32V004 | 八项菜单：小游戏、分形、视频，720p 输出，带 TE 同步 |
 | [`esp32s3/`](esp32s3) | ESP32-S3（ESP-IDF） | 支持 SPI 和 QSPI 的 `esp_lcd` 驱动组件，以及一个串口交互测试程序 |
 | [`esp32s3/retro-go`](esp32s3#retro-go) | ESP32-S3（ESP-IDF） | retro-go 模拟器合集（NES、Game Boy、Doom 等），HDMI 出画面和声音 |
+| [`stc8/`](stc8) | STC8G1K17A（8 脚 8051，SDCC） | 1 KB 内存跑满屏 640x480 调色板动画；另有选单、小恐龙和 CHIP-8 游戏机（目前只在电脑上仿真过） |
 | [`common/spi2hdmi.h`](common/spi2hdmi.h) | 任意单片机 | 单头文件驱动，填三个回调函数即可移植 |
 
 ```sh
@@ -77,4 +78,4 @@ SPI 最高 80MHz，QSPI 最高 40MHz。这个频率对杜邦线和面包板来�
 
 ## 许可
 
-各目录保留各自的许可：`esp32s3/` 为 MIT（其中的 retro-go 子模块为 GPL-2.0）；`ch32/arcade` 因包含第三方游戏代码而采用 GPL-3.0-or-later（见其中的 `THIRD_PARTY.md`）。ch32fun 是独立项目，遵循其自身许可。
+各目录保留各自的许可：`esp32s3/` 为 MIT（其中的 retro-go 子模块为 GPL-2.0）；`stc8/` 为 MIT（`stc8/roms` 里的 CHIP-8 程序为 CC0）；`ch32/arcade` 因包含第三方游戏代码而采用 GPL-3.0-or-later（见其中的 `THIRD_PARTY.md`）。ch32fun 是独立项目，遵循其自身许可。

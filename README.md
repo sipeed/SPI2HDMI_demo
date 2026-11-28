@@ -18,6 +18,7 @@ This repository holds the example code. 中文说明见 [README_zh.md](README_zh
 | [`ch32/arcade`](ch32/arcade) | CH32V004 | Eight-entry menu with games, fractals and video at 720p, TE-synchronised |
 | [`esp32s3/`](esp32s3) | ESP32-S3 (ESP-IDF) | `esp_lcd` panel driver for SPI and QSPI, plus an interactive console test |
 | [`esp32s3/retro-go`](esp32s3#retro-go) | ESP32-S3 (ESP-IDF) | retro-go emulators (NES, Game Boy, Doom...) with HDMI picture and sound |
+| [`stc8/`](stc8) | STC8G1K17A (8-pin 8051, SDCC) | Full-screen 640x480 palette animation from 1 KB of RAM; a menu, dino game and CHIP-8 console (simulation only so far) |
 | [`common/spi2hdmi.h`](common/spi2hdmi.h) | any MCU | Portable single-header driver: fill in three callbacks |
 
 ```sh
@@ -77,4 +78,4 @@ SPI runs up to 80 MHz and QSPI up to 40 MHz. Those clocks are fast for jumper wi
 
 ## Licenses
 
-Each directory keeps its own license: `esp32s3/` is MIT (the retro-go submodule is GPL-2.0), `ch32/arcade` is GPL-3.0-or-later because it includes third-party game code (see its `THIRD_PARTY.md`). ch32fun is a separate project under its own license.
+Each directory keeps its own license: `esp32s3/` is MIT (the retro-go submodule is GPL-2.0), `stc8/` is MIT (the CHIP-8 programs in `stc8/roms` are CC0), `ch32/arcade` is GPL-3.0-or-later because it includes third-party game code (see its `THIRD_PARTY.md`). ch32fun is a separate project under its own license.
