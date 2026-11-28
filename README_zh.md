@@ -4,9 +4,9 @@
 
 这个仓库是配套的例程代码。English: [README.md](README.md)
 
-![四个演示：分形、CH32V004 上的小恐龙游戏、ESP32-S3 上的 NES 模拟器和 LVGL 基准测试](docs/images/demos.jpg)
+![四个演示：8 脚 STC8G1K17A（51 单片机）的全彩动画、CH32V004 上的小恐龙游戏、ESP32-S3 上的 NES 模拟器和 LVGL 基准测试](docs/images/demos.jpg)
 
-*上排：实时计算的分形、CH32V004 上的小恐龙游戏；下排：ESP32-S3 运行 NES 模拟器和 LVGL 基准测试。*
+*上排：8 脚 STC8G1K17A（51 单片机）驱动的全屏全彩动画、CH32V004 上的小恐龙游戏；下排：ESP32-S3 运行 NES 模拟器和 LVGL 基准测试。*
 
 ![六个特性：兼容 ILI9341 指令、SPI 与 QSPI 双模式、两种分辨率输出、像素整数放大、多种色深、HDMI 音频](docs/images/features.svg)
 

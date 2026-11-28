@@ -4,9 +4,9 @@
 
 This repository holds the example code. 中文说明见 [README_zh.md](README_zh.md)。
 
-![Four demos: fractals, a dino game on a CH32V004, an NES emulator and the LVGL benchmark on an ESP32-S3](docs/images/demos.jpg)
+![Four demos: colour animation from an 8-pin STC8G1K17A (8051), a dino game on a CH32V004, an NES emulator and the LVGL benchmark on an ESP32-S3](docs/images/demos.jpg)
 
-*Top left: fractals computed in real time. Top right: a dino game on a CH32V004. Bottom: an NES emulator and the LVGL benchmark on an ESP32-S3.*
+*Top left: full-screen colour animation driven by an 8-pin STC8G1K17A (8051). Top right: a dino game on a CH32V004. Bottom: an NES emulator and the LVGL benchmark on an ESP32-S3.*
 
 ![Six features: ILI9341-compatible commands, SPI and QSPI, two output resolutions, integer pixel zoom, several colour depths, HDMI audio](docs/images/features_en.svg)
 
